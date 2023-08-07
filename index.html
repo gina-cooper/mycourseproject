@@ -33,7 +33,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
        <hr>
       <h2>Skills</h2>
        <hr>
-    
+       
       <div class="skill-list">
           <h3>Database Design</h3>
           <p>Databases are so much fun to design and build. I've been working with databases for 20 years from traditional relational databases to NoSQL. I've loved designing databases for different needs.</p>
@@ -60,7 +60,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
   <li><a href="https://twitter.com/"><i class="fa  fa-twitter"></i></a></li>
   <li><a href="https://instagram.com/"><i class="fa  fa-instagram"></i></a></li> 
    </ul>
-   <script>const d = new Date(); console.log(d); console.log("hello world");</script>
+   <p>Date/Time: <span id="datetime"></span></p>
+
+   <script>
+   var dt = new Date();
+   document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+   </script>
 </div>
 </body>
 </html>
