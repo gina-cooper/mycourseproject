@@ -54,18 +54,19 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome
 <div class="contact" id = "contact">
   <h2>Feel free to contact me <a href="mailto:yourname@email.com"><i class="fa  fa-envelope"></i></a></h2>      
 </div>
+<p>Date/Time: <span id="datetime"></span></p>
+
+   <script>
+   var dt = new Date();
+   document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+   </script>
   <ul class="social-menu"> 
   <li><a href="https://github.com/"><i class="fa  fa-github"></i></a></li>
   <li><a href="https://linkedin.com/"><i class="fa  fa-linkedin"></i></a></li> 
   <li><a href="https://twitter.com/"><i class="fa  fa-twitter"></i></a></li>
   <li><a href="https://instagram.com/"><i class="fa  fa-instagram"></i></a></li> 
    </ul>
-   <p>Date/Time: <span id="datetime"></span></p>
-
-   <script>
-   var dt = new Date();
-   document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-   </script>
+   
 </div>
 </body>
 </html>
